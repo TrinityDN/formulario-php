@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Pangolin&family=Source+Serif+Pro&family=Yanone+Kaffeesatz:wght@400;500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+ 
+h1{
+    color: #2b1f18;
+    margin-top: 13%;
+    font-family: 'Pangolin', cursive;
+    font-size: 260%;
+    margin-left: 9%;
+}
+
+
+body{
+    background-color: rgb(243, 227, 155);
+
+
+}
+
+
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+
+#direita{
+    width: 40%;
+    align-items: center;
+    background-color: rgba(252, 252, 252, 0.993);
+}
+
+
+#esquerda{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    background-image: url("../img/qr.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 50%;
+    height: 100vh;
+}
+
+
+
+
+#plantas{
+    margin-left: 8%;
+    margin-top: 4%;
+    opacity: 80%;
+}
+#planta{
+    width: 29%;
+}
+
+
+#borboleta{
+    width: 12%;
+    margin-bottom: 8%;
+}
+
+
+#formulario{
+    margin-top: 5%;
+    background-color: #fff;
+    padding: 3%;
+    width: 60%;
+    border-radius: 20px;
+    margin-left: 9%;
+    margin-bottom: 5%;
+    box-shadow: 1px 3px 9px #0000003b;
+}
+
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+input{
+    margin-bottom: 2%;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid #ebc252;
+    outline: none;  
+    font-family: 'Source Serif Pro', serif;
+    font-size: 110%;
+}
+
+
+label{
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+}
+
+
+p, h3{
+    margin-top: 2%;
+    margin-left: 9%;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 133%;
+}
+
+
+#btn-confirma{
+    margin-top: 2%;
+    background-color: rgba(172, 19, 52, 0.726);
+    border: none;
+    width: 30%;
+    height: 35px;
+    border-radius: 5px;
+    color: #fff;
+    transition: 500ms;
+}
+
+
+#btn-confirma:hover{
+    background-color: rgba(173, 55, 80, 0.726);
+    transition: 700ms;
+}
+
+
+
+
+@media screen and (max-width: 1050px){
+    #direita{
+        width: 55%;
+    }
+    #esquerda{
+        margin-top: 25%;
+        width: 45%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 750px){
+    #direita{
+        width: 100%;
+    }
+    #esquerda{
+        width: 100%;
+        margin-top: 0%;
+        height: 45vh;
+    }
+    #formulario{
+        padding: 5%;
+        max-width: 100%;
+        min-width: 200px;
+    }
+    #btn-confirma{
+        width: 45%;
+        margin-top: 4%;
+    }
+    main{
+        flex-direction: column;
+    }
+
+
+}
+
+
